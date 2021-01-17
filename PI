@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+double x=22, y=7;
+int diameter;
+
+const double pi = x/y;
+
+cout<< "The value of PI is "<< pi << "\n";
+
+double circumference;
+
+cout<< "A circle with a diameter of 6, has a circumferece of " << 2*pi*3 << "\n";
+
+cout<< "Please input your circles diameter here and press return:";
+cin>> diameter;
+circumference = 2*pi*(diameter/2);
+
+cout<< "The circle's circumference is " << circumference;
+return 0;
+}
