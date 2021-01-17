@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+int startingNumber;
+startingNumber =(rand() % (30 + 1 - 20)) + 20;
+int userGuess;
+int sysGuess;
+int loopNumber;
+int winner;
+
+cout<<"Lets play a game \n I'm thinking of a number between 20 and 30 \n we are going to take turns to take away between 1 and 3 from my number \n the first one to reach 0 looses \n so take your first guess \n";
+cin>> userGuess;
+
+if (userGuess>4){
+cout<<"You have picked an invalid number, try again, any number from 1, 2 or 3: \n";
+cin>> userGuess;}
+else{
+loopNumber = startingNumber-userGuess;}
+
+while (loopNumber>0){
+sysGuess =(rand()%3+1);
+loopNumber=loopNumber-sysGuess;
+cout<<"I choose " <<sysGuess<<"\n";
+if (loopNumber <= 0)
+cout<<"You win! The number we started with was "<< startingNumber<<"\n";
+else
+cout<<"Take your next guess \n";
+cin>> userGuess;
+loopNumber= loopNumber-userGuess;
+if(loopNumber <= 0)
+cout<<"You loose! The number we started with was "<< startingNumber<<"\n";
+}
+return 0;
+}
