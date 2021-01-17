@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  
+  string greeting;
+  cout<< "Please enter the word you want to check:";
+  cin>> greeting;
+  
+  string new_greeting;
+
+  for(int n = greeting.length()-1; n >= 0; n--){
+    new_greeting.push_back(greeting[n]);
+  }
+  cout<<"The word you are checking is: "<< greeting << endl;
+  cout<<"Which when reversed is: "<< new_greeting << endl;
+   if(greeting == new_greeting)
+   cout<< greeting <<" is a palindrome";
+   else
+   cout<< greeting <<" is not a palindrome";
+
+return 0;
+}
