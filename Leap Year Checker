@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+double year;
+cout << "what year would you like to check? ";
+cin >> year;
+
+bool valid;
+valid = year>1752;
+
+double four = year/4;
+if(four == static_cast<int>(four))
+   four= true;
+else
+   four= false;
+   
+double fourc = year/400;
+if(fourc == static_cast<int>(fourc))
+   fourc=true;
+else
+   fourc= false;
+   
+double onec = year/100;
+if(onec == static_cast<int>(onec))
+  onec=true;
+else
+  onec= false;
+   
+if (valid == 1)
+  if (fourc == 1)
+  cout<< year << " is a leap year";
+  else if (four == 1 && onec != 1)
+  cout<<year <<" is a leap year";
+  else
+  cout<<year << " is not a leap year";
+else
+cout<<year << " is not a leap year";
+return 0;
+}
