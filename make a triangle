@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+string cisbest [13] = {"t ","s ","e ","b ","s ","i ","C ","i ","s ","b ","e ","s ","t "};
+string a, b, c, d, e, f;
+a= " ";//1
+b= "   ";//2
+c= "      "; //3 
+d= "        ";//4
+e= "          ";//5
+f= "            ";//6
+
+cout << f << cisbest[6] << "\n";
+cout << e << cisbest[5] << a << a << cisbest[7] << "\n";
+cout << d << cisbest[4] << b << b << cisbest[8] << "\n";
+cout << c << cisbest[3] << c << b << cisbest[9] << "\n";
+cout << b << cisbest[2] << d << c << cisbest[10] << "\n";
+cout << a << cisbest[1] << e << d << cisbest[11] << "\n";
+
+for (int i = 0; i < 13; i++) {
+  cout << cisbest[i];
+}
+
+ return 0;  
+}
