@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Employee{
+    public:
+
+    string Name;
+    int YearJoined;
+    int Salary;
+    string Address;
+  };
+  
+int main() {
+
+  Employee EmployeeObj1;
+  EmployeeObj1.Name = "Robert";
+  EmployeeObj1.YearJoined = 2018;
+  EmployeeObj1.Salary = 25000;
+  EmployeeObj1.Address = "64C London Street";
+
+  Employee EmployeeObj2;
+  EmployeeObj2.Name = "Farah";
+  EmployeeObj2.YearJoined = 2015;
+  EmployeeObj2.Salary = 35000;
+  EmployeeObj2.Address = "68D Bristol Road";
+
+  Employee EmployeeObj3;
+  EmployeeObj3.Name = "Satinder";
+  EmployeeObj3.YearJoined = 2019;
+  EmployeeObj3.Salary = 32500;
+  EmployeeObj3.Address = "26B Salt Street";
+
+  cout <<  EmployeeObj1.Name << " "<< EmployeeObj1.YearJoined<< " £"<<EmployeeObj1.Salary<< " "<< EmployeeObj1.Address<< "\n";
+
+  cout <<  EmployeeObj2.Name << " "<< EmployeeObj2.YearJoined<< " £"<<EmployeeObj2.Salary<< " "<< EmployeeObj2.Address<< "\n";
+
+  cout <<  EmployeeObj3.Name << " "<< EmployeeObj3.YearJoined<< " £"<<EmployeeObj3.Salary<< " "<< EmployeeObj3.Address<< "\n";
+  return 0;
+  }
